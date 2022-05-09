@@ -72,7 +72,11 @@ npm run start
 please see the contributing guidelines
 
 👤 Contributors
+
 -Kwon minsoo github
+
 -Kwon ikchan github ikchan0625
+
 -Kim beomju github bbammju
+
 -Jea gyoungmo github 304HO
