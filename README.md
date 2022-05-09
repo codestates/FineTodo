@@ -60,8 +60,8 @@ prettier(v2.3.2)
 
   
   
-  { "tabWidth": 2,
-    
+  
+    { "tabWidth": 2,
     "endOfLine": "lf",
     
     "arrowParens": "avoid",
