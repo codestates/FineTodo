@@ -107,6 +107,6 @@ please see the contributing guidelines
 
 -Kwon ikchan github ikchan0625 Front
 
--Kim beomju github bbammju FullStack
+-Kim beomju github bbammju Back
 
 -Jea gyoungmo github 304HO Back
