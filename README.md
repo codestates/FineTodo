@@ -103,10 +103,10 @@ please see the contributing guidelines
 
 👤 Contributors
 
--Kwon minsoo github
+-Kwon minsoo github Front
 
--Kwon ikchan github ikchan0625
+-Kwon ikchan github ikchan0625 Front
 
--Kim beomju github bbammju
+-Kim beomju github bbammju FullStack
 
--Jea gyoungmo github 304HO
+-Jea gyoungmo github 304HO Back
