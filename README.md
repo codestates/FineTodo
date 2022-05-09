@@ -58,9 +58,9 @@ node(v14.16.1)
 
 prettier(v2.3.2)
 
-  {
   
-  {  "tabWidth": 2,
+  
+  { "tabWidth": 2,
     
     "endOfLine": "lf",
     
@@ -72,10 +72,7 @@ prettier(v2.3.2)
     
     "trailingComma": "all",
     
-    "printWidth": 80 
-}
-    
-  }
+    "printWidth": 80 }
   
   
 Install
