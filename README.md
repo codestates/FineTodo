@@ -32,43 +32,75 @@ FineAcademy입니다.
 매주 우리 아이의 현재 학습진단과 수준을 진단하여 제공해드립니다.
 
 🌐 Browsers Support
+
 IE / Edge
+
 IE / Edge	Chrome
+
 Chrome	Safari
+
 Safari	Samsung
+
 Samsung
+
 Edge	last version	last version	last version
+
+
 🔨 Development
 
 
 
 Environment & setup
+
 npm(v6.xx.x)
+
 node(v14.16.1)
+
 prettier(v2.3.2)
+
   {
+  
     "tabWidth": 2,
+    
     "endOfLine": "lf",
+    
     "arrowParens": "avoid",
+    
     "singleQuote": true,
+    
     "semi": true,
+    
     "trailingComma": "all",
+    
     "printWidth": 80
+    
   }
+  
+  
 Install
+
 git clone https://github.com/codestates/FineAcademy
+
 cd FineAcademy
 
 #Client
+
 cd client
+
 npm install
+
 npm run start
 
 #Server
+
 cd server
+
 npm install
+
 npm run start
+
 😇 Contributing
+
 please see the contributing guidelines
 
 👤 Contributors
