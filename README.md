@@ -1,97 +1,70 @@
+# Getting Started with Create React App
 
-📰 FineAcademy
-우리 아이를 위한 학원찾기 서비스!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-🏠 FineAcademy Homepage
+In the project directory, you can run:
 
+### `npm start`
 
-✨ Feature
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-우리집 주변의 학원, 교육기관등의 정보를 알려드립니다.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-필요한 과목과 학년 수준등을 선택하여 찾을수 있습니다.
+### `npm test`
 
-차트를 통해 교육 키워드와 학생들의 관리현황을 시각적으로 확인할수 있습니다. 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-매주 우리 아이의 현재 학습량과 수준을 진단하여 제공해드립니다.
+### `npm run build`
 
-🌐 Browsers Support
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-IE / Edge
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-IE / Edge	Chrome
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Chrome	Safari
+### `npm run eject`
 
-Safari	Samsung
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Samsung
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Edge	last version	last version	last version
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-🔨 Development
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Environment & setup
+### Code Splitting
 
-npm(v6.xx.x)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-node(v14.16.1)
+### Analyzing the Bundle Size
 
-prettier(v2.3.2)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-  
-  
-  
-    { "tabWidth": 2,
-    "endOfLine": "lf",
-    
-    "arrowParens": "avoid",
-    
-    "singleQuote": true,
-    
-    "semi": true,
-    
-    "trailingComma": "all",
-    
-    "printWidth": 80 }
-  
-  
-Install
+### Making a Progressive Web App
 
-git clone https://github.com/codestates/FineAcademy
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-cd FineAcademy
+### Advanced Configuration
 
-#Client
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-cd client
+### Deployment
 
-npm install
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-npm run start
+### `npm run build` fails to minify
 
-#Server
-
-cd server
-
-npm install
-
-npm run start
-
-😇 Contributing
-
-please see the contributing guidelines
-
-👤 Contributors
-
--Kwon minsoo github Front
-
--Kwon ikchan github ikchan0625 Front
-
--Kim beomju github bbammju Back
-
--Jea gyoungmo github 304HO Back
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
