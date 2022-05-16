@@ -1,27 +1,26 @@
 import styled from 'styled-components';
-import React from "react";
+import React, {useEffect, useState} from "react";
 import bkimg from "../assets/bkimg.jpg";
 import logo from "../assets/logo.jpg";
 import MypageCancelbtn from '../buttons/mypagecancelbtn'
 import Mypage_myinfobtn from '../buttons/mypage_myinfobtn'
 import Mypage_infoeditbtn from '../buttons/mypage_infoeditbtn'
 import Mypage_goodsentencebtn from '../buttons/mypage_goodsentencebtn'
+// import { getSentences } from '../sentenceapi'
 
-export default function Login() {
+const Container = styled.div`
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: 1;
+background-image: url(${bkimg});
+background-size: cover;
+text-align: center;
 
-  const Container = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-image: url(${bkimg});
-  background-size: cover;
-  text-align: center;
-  
 `;
 
 const Logo = styled.img.attrs({
-  src: `${logo}`,
+src: `${logo}`,
 })`
 position: absolute;
 width: 30%;
@@ -66,7 +65,24 @@ right: 3%;
 background-color: rgba(255, 255, 255, 0.5);
 border-radius: 1rem;
 `
+   
+const Sentence = styled.div`
+position: absolute;
+width: 50%;
+height: 20%;
+top: 40%;
+right: 25%;
+font-size: 3rem;
+`
 
+const Sentence_text = styled.text`
+position: absolute;
+width: 50%;
+height: 20%;
+top: 40%;
+left: 25%;
+font-size: 2rem;
+`
 
 const Signoutbtn = styled.button`
 position: absolute;
@@ -78,6 +94,27 @@ border-radius: 1rem;
 font-size: 2rem;
 text-align: center;
 `
+export default function Goodsentence() {
+
+
+  const [adv, setAdv] = useState("");
+
+  useEffect(() => {
+      const url = "https://api.adviceslip.com/advice";
+
+      const fetchData = async () => {
+          try {
+              const response = await fetch(url);
+              const json = await response.json();
+              
+              setAdv(json.slip.advice);
+          } catch (err) {
+            console.log(err)
+          }
+      };
+
+      fetchData();
+  }, []);
   return (
 
     <div className='container'>
@@ -89,8 +126,8 @@ text-align: center;
           <Mypage_goodsentencebtn/>
           </MenuContainer></div>
         <div className = 'resultcontainer'><ResultContainer>
-          <SummaryInfo/>
-          <DetailInfo/>
+          <SummaryInfo><Sentence_text>오늘도 화이팅!</Sentence_text></SummaryInfo>
+          <DetailInfo><Sentence>{adv}</Sentence></DetailInfo>
           </ResultContainer>
           </div>
         <div className = 'signout'><Signoutbtn>회원탈퇴</Signoutbtn></div>
