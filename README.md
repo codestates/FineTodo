@@ -1,13 +1,55 @@
-부모님과 우리 모두 학창시절 공부를 하는거 같은데 성적이 오르지 않아서 힘들었던적이 있나요?,
+## 오늘뭐해?
 
-아이의 미래를 함께 그려나가는곳, FineAcademy를 찾아주세요~
+오늘 해야할 일들을 저장 확인 할수있는 웹앱플리케이션
 
-고민은 이제 우리가 대신해드리겠습니다. 언제나 든든한 여러분의 교육 매칭 서비스
+### ❗주요기능
 
-FineAcademy입니다.
+- 오늘 할일을 작성, 수정, 체크, 삭제 할수있습니다.
+-
+-
+-
 
-솔직한 리뷰를 바탕으로 나이 성별 실력등 우리아이에게 맞는 최적의 학원을 찾아볼수 있습니다!
+### 🎞️ 서비스 시연
 
-아이를 위해 함께 고민하는 교육 매니지먼트
+- 랜딩페이지
+- 로그인 & 로그아웃
+- 회원가입 & 회원탈퇴
+- 마이페이지
+-
+-
 
-'FineAcademy'입니다 :)
+### 👨‍👩‍👧‍👧 팀 소개 및 프로젝트 기간 📅
+
+- 2022.05.09 ~ 2022.05.20 (2주)
+
+## 👦권민수 (팀장)
+
+```
+Position : FE(Front-End), BE(Back-End)
+About : Github / velog
+Stack
+```
+
+## 🧑권익찬
+
+```
+Position : FE(Front-End), BE(Back-End)
+About : Github / velog
+Stack
+```
+
+## 👨김범주
+
+```
+Position : FE(Front-End), BE(Back-End)
+About : Github / velog
+Stack
+```
+
+## 🧓제경모
+
+```
+Position : FE(Front-End), BE(Back-End)
+About : Github / velog
+Stack
+```
