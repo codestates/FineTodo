@@ -3,7 +3,9 @@ import React from "react";
 import bkimg from "../assets/bkimg.jpg";
 import logo from "../assets/logo.jpg";
 import MypageCancelbtn from '../buttons/mypagecancelbtn'
-
+import Mypage_myinfobtn from '../buttons/mypage_myinfobtn'
+import Mypage_infoeditbtn from '../buttons/mypage_infoeditbtn'
+import Mypage_goodsentencebtn from '../buttons/mypage_goodsentencebtn'
 
 export default function Login() {
 
@@ -37,6 +39,24 @@ left: 3%;
 background-color: rgba(255, 255, 255, 0.5);
 border-radius: 1rem;
 `
+const SummaryInfo = styled.div`
+position: absolute;
+width: 35%;
+height: 17%;
+top: 5%;
+left: 5%;
+background-color: rgba(127, 127, 127, 0.5);
+border-radius: 1rem;
+`
+const DetailInfo = styled.div`
+position: absolute;
+width: 85%;
+height: 65%;
+top: 29%;
+left: 5%;
+background-color: rgba(127, 127, 127, 0.5);
+border-radius: 1rem;
+`
 const ResultContainer = styled.div`
 position: absolute;
 width: 60%;
@@ -46,6 +66,7 @@ right: 3%;
 background-color: rgba(255, 255, 255, 0.5);
 border-radius: 1rem;
 `
+
 
 const Signoutbtn = styled.button`
 position: absolute;
@@ -62,8 +83,16 @@ text-align: center;
     <div className='container'>
       <Container>
         <div className = 'logo'><Logo/></div>
-        <div className = 'menucontainer'><MenuContainer/></div>
-        <div className = 'resultcontainer'><ResultContainer/></div>
+        <div className = 'menucontainer'><MenuContainer>
+          <Mypage_myinfobtn/>
+          <Mypage_infoeditbtn/>
+          <Mypage_goodsentencebtn/>
+          </MenuContainer></div>
+        <div className = 'resultcontainer'><ResultContainer>
+          <SummaryInfo/>
+          <DetailInfo/>
+          </ResultContainer>
+          </div>
         <div className = 'signout'><Signoutbtn>회원탈퇴</Signoutbtn></div>
         <div className = 'mypagecancel'><MypageCancelbtn/></div>
       </Container>

@@ -20,7 +20,7 @@ const ToMypagebtn = () => {
     <section className="main">
       {/* TODO : About 메뉴 아이콘과 Mypage 메뉴 아이콘을 작성하고 Link 컴포넌트를 이용하여 경로(path)를 연결합니다. */}
 
-      <Link to="/mypage">
+      <Link to="/mypage_myinfo">
       <ToMypagebtn>마이페이지</ToMypagebtn>
       </Link>
 
