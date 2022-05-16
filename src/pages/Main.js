@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import React from "react";
 import bkimg from "../assets/bkimg.jpg";
 import logo from "../assets/logo.jpg";
-import ToMypagebtn from '../buttons/tomypage'
+import ToMypagebtn from '../buttons/tomypagebtn'
+import mock from "../mockdata"
 
 
 export default function Login() {
@@ -28,7 +29,7 @@ top: 5%;
 left: 3%;
 border-radius: 1rem;
 `
-const MenuContainer = styled.div`
+const Todolist_Container = styled.div`
 position: absolute;
 width: 30%;
 height: 68%;
@@ -56,13 +57,45 @@ border-radius: 1rem;
 font-size: 2rem;
 text-align: center;
 `
+const Todolist = styled.div`
+text-align: center;
+position: relative;
+font-size: 20px;
+background-color: cyan;
+width: 90%;
+height: auto;
+left: 5%;
+top: 3%;
+z-index: 3;
+`
+
   return (
 
     <div className='container'>
       <Container>
         <div className = 'logo'><Logo/></div>
-        <div className = 'menucontainer'><MenuContainer/></div>
-        <div className = 'resultcontainer'><ResultContainer/></div>
+        <div className = 'todolistcontainer'><Todolist_Container>
+        {mock.map(el => {
+      return (
+        <Todolist className="list" key={el.id}>
+          <div>{el.todo.summary}</div>
+        </Todolist>
+      )
+    })}
+          </Todolist_Container></div>
+        <div className = 'resultcontainer'><ResultContainer>
+        {mock.map(el => {
+      return (
+        <Todolist className="list" key={el.id}>
+          <div>{el.todo.title}</div>
+          <div>{el.todo.detail}</div>
+          <div>{el.todo.supply}</div>
+          <div>{el.todo.location}</div>
+          <div>{el.todo.friend}</div>
+        </Todolist>
+      )
+    })}
+          </ResultContainer></div>
         <div className = 'tomypage'><ToMypagebtn/></div>
         <div className = 'logout'><Logoutbtn>로그아웃</Logoutbtn></div>
       </Container>
