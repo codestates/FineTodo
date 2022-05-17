@@ -33,6 +33,7 @@ border-radius: 1rem;
     <div className='container'>
       <Container>
         <div className = 'logo'><Logo/></div>
+        <div className='loginbtn'><Loginbtn/></div>
         <div className='signupbtn'><Signupbtn/></div>
 
       </Container>
