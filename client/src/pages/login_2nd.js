@@ -69,7 +69,7 @@ export default function Login() {
       <Container>
         <div className = 'logo'><Logo/></div>
         <div className='input_id'><Input_id placeholder='아이디를 입력하세요'/></div>
-        <div className='input_password'><Input_password placeholder='비밀번호를 입력하세요'/></div>
+        <div className='input_password'><Input_password type='password' placeholder='비밀번호를 입력하세요'/></div>
         <div className='loginbtn2'><Loginbtn2>로그인</Loginbtn2></div>
         <div className='loginbtn2'><Cancelbtn>취소</Cancelbtn></div>
       </Container>
