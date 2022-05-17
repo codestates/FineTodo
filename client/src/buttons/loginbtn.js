@@ -9,7 +9,7 @@ const Loginbtn = () => {
   const Loginbtn = styled.button`
   position: absolute;
   width: 18%;
-  height: 13%;
+  height: 1%;
   top: 45%;
   left: 41%;
   border-radius: 2rem;
