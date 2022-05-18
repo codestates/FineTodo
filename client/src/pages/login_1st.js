@@ -22,7 +22,7 @@ const Logo = styled.img.attrs({
 })`
 position: absolute;
 width: 30%;
-height: 17%;
+height: 1%;
 top: 23%;
 left: 35%;
 border-radius: 1rem;
