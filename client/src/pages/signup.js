@@ -1,12 +1,9 @@
-
-
-
 import styled from 'styled-components';
-import React from "react";
+import React, {useState} from "react";
 import bkimg from "../assets/bkimg.jpg";
 import logo from "../assets/logo.jpg";
 import Cancelbtn from '../buttons/cancelbtn'
-import { useState } from 'react';
+import axios from 'axios'
 
 const Input_info_id = styled.input`
   position: absolute;
@@ -125,9 +122,6 @@ background-size: cover;
 text-align: center;
 
 `;
-export default function Login() {
-
-
 const Logo = styled.img.attrs({
   src: `${logo}`,
 })`
@@ -139,9 +133,12 @@ right: 3%;
 border-radius: 1rem;
 `
 
-const [id, setId] = useState("")
-const [name, setName] = useState("")
+export default function () {
 
+
+const [user_id, setId] = useState("")
+const [user_name, setName] = useState("")
+const [user_age, setAge] = useState('')
 const [password, setPassword] = useState("")
 const [confirmPassword, setConfirmPassword] = useState("")
 
@@ -151,28 +148,32 @@ const onIDHandler = (event) => {
 const onNameHandler = (event) => {
   setName(event.currentTarget.value)
 }
-
+const onAgeHandler = (event) => {
+  setAge(event.currentTarget.value)
+}
 const onPasswordHandler = (event) => {
     setPassword(event.currentTarget.value)
 }
 
 const onConfirmPasswordHandler = (event) => {
     setConfirmPassword(event.currentTarget.value)
-  //  console.log(name,"*",email,"*",password,"*",confirmPassword)
-    //usestate 값 담겨 있는지 확인오ㅛㅇ ! 
-    console.log(name,id,password)
-}
 
-const onSubmit = (event) => {
-  
-  event.preventDefault()
-  if(password !== confirmPassword) {
-    return alert('비밀번호와 비밀번호확인은 같아야 합니다.')
+}
+const handleSignup = () => {
+
+  if(!user_id || !password || !user_name || !user_age ){
+      return "모든 항목은 필수입니다";
+
+
+  } else { 
+    axios.post("https://localhost:3001/signup"
+    ,{user_id, password, user_name, user_age
+    }).then(res => {
+      console.log('hello')
+    })
   }
-  
+};
 
-
-}
 
   return (
 
@@ -184,7 +185,7 @@ const onSubmit = (event) => {
           </div>
           <form>
         <div className = 'input_info_id'>
-          <Input_info_id name = "id" placeholder='아이디를 입력하세요' valu ={id} onChange={onIDHandler}/>
+          <Input_info_id name = "id" placeholder='아이디를 입력하세요' value ={user_id} onChange={onIDHandler}/>
         </div>
         <div className = 'id_check'>
           <Id_check >중복검사</Id_check>
@@ -193,10 +194,10 @@ const onSubmit = (event) => {
           <Id_check_result>이미 있는 아이디입니다</Id_check_result>
         </div>
         <div className = 'input_info_password'>
-        <Input_info_password type ="password" name="password1" placeholder='비밀번호를 입력하세요' vlaue ={password} onChange ={onPasswordHandler}/>
+        <Input_info_password type ="password" name="password1" placeholder='비밀번호를 입력하세요' value ={password} onChange ={onPasswordHandler}/>
         </div>
         <div className = 'input_info_password_check'>
-          <Input_info_password_check type="password" name ="password2" value={confirmPassword} onChange ={onConfirmPasswordHandler}  placeholder='비밀번호를 다시 입력하세요'/>
+          <Input_info_password_check type="password" name ="password2" value={confirmPassword} onChange ={onConfirmPasswordHandler} placeholder='비밀번호를 다시 입력하세요'/>
         </div>
         <div className = 'password_check_result'>
           <Password_check_result>
@@ -206,13 +207,13 @@ const onSubmit = (event) => {
             </Password_check_result>
         </div>
         <div className = 'input_info_name'>
-          <Input_info_name type ="text" name ="name" onChange={onNameHandler}  placeholder='이름을 입력하세요'/>
+          <Input_info_name type ="text" name ="name" value={user_name} onChange={onNameHandler}  placeholder='이름을 입력하세요'/>
         </div>
         <div className = 'input_info_age'>
-          <Input_info_age name ="age" type ="number" placeholder='나이를 입력하세요'/>
+          <Input_info_age name ="age" type ="number" value={user_age} onChange={onAgeHandler} placeholder='나이를 입력하세요'/>
         </div>
         <div className = 'signupbtn2'>
-          <Signupbtn2>회원가입</Signupbtn2>
+          <Signupbtn2 onClick={handleSignup}>회원가입</Signupbtn2>
         </div>
         <div className = 'cancel'>
           <Cancelbtn>취소</Cancelbtn>
