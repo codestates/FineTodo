@@ -22,7 +22,7 @@ app.post("/signup", controllers.signup);
 app.post("/signout", controllers.signout);
 
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 4001;
 
 app.get("/", (req, res) => {
   res.json({ message: "Hello from server!" });
