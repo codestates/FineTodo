@@ -37,7 +37,7 @@ const Inputpassword = styled.input`
 `;
 
 const Loginbtn2 = styled.button`
-  border-radius: 1rem;
+  border-radius: 2rem;
   font-size: 2rem;
   text-align: center;
 `;
